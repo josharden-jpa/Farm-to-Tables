@@ -16,27 +16,6 @@ us_oils_kcal_change,496.77,kcal/person/day,02_us_trends.R,part of rise near 2000
 us_oils_grains_sugar_share_of_plant_growth,81.46,% of added plant kcal,02_us_trends.R,
 us_pulses_kcal_last,36.57,kcal/person/day,02_us_trends.R,2024
 us_pulses_share_of_kcal_last,0.93,% of kcal,02_us_trends.R,2024
-us_total_kcal_first,2879.8,kcal/person/day,02_us_trends.R,1961
-us_total_kcal_last,3949.73,kcal/person/day,02_us_trends.R,2024
-us_total_kcal_pct_change,37.15,%,02_us_trends.R,1961 to 2024
-us_animal_share_first,35.07,% of kcal,02_us_trends.R,1961
-us_animal_share_last,28.45,% of kcal,02_us_trends.R,2024 (post-2017 rise partly an FAO artifact; see 03)
-us_meat_pct_change,48.9,%,02_us_trends.R,
-us_animal_fats_pct_change,-29.76,%,02_us_trends.R,
-us_plant_kcal_change,956.24,kcal/person/day,02_us_trends.R,
-us_oils_kcal_change,496.77,kcal/person/day,02_us_trends.R,part of rise near 2000 may be a reporting artifact (ERS)
-us_oils_grains_sugar_share_of_plant_growth,81.46,% of added plant kcal,02_us_trends.R,
-us_pulses_kcal_last,36.57,kcal/person/day,02_us_trends.R,2024
-us_pulses_share_of_kcal_last,0.93,% of kcal,02_us_trends.R,2024
-ers_beef_peak_lbs,88.78,lbs/person/yr (boneless),03_meat_ers.R,peak year 1976
-ers_beef_last_lbs,56.18,lbs/person/yr (boneless),03_meat_ers.R,2021
-ers_chicken_first_lbs,10.43,lbs/person/yr (boneless),03_meat_ers.R,1909
-ers_chicken_last_lbs,68.1,lbs/person/yr (boneless),03_meat_ers.R,2021
-ers_year_chicken_passes_beef,2010,year,03_meat_ers.R,first year after which chicken stays above beef
-meat_fao_ers_correlation,0.91,r,03_meat_ers.R,1961 to 2021 (descriptive; no p-value because years are not independent)
-fao_meat_change_2018,9.53,% vs 2017,03_meat_ers.R,likely FAO data artifact
-ers_meat_change_2018,1.09,% vs 2017,03_meat_ers.R,
-ers_meat_index_last,130.77,index (1961 = 100),03_meat_ers.R,2021
 ers_beef_peak_lbs,88.78,lbs/person/yr (boneless),03_meat_ers.R,peak year 1976
 ers_beef_last_lbs,56.18,lbs/person/yr (boneless),03_meat_ers.R,2021
 ers_chicken_first_lbs,10.43,lbs/person/yr (boneless),03_meat_ers.R,1909
@@ -76,31 +55,16 @@ esp_animal_share_protein,67.01,% of protein,05_highincome.R,Spain
 isr_total_protein_g,135.72,g/person/day,05_highincome.R,Israel
 isr_animal_share_protein,59.44,% of protein,05_highincome.R,Israel
 cor_totalprotein_animalshare_r,0.52,Pearson r,05_highincome.R,
-cor_totalprotein_animalshare_p,0,p-value,05_highincome.R,
-cor_pulsefood_pulseshare_r,0.38,Pearson r,05_highincome.R,
-cor_pulsefood_pulseshare_p,0.01,p-value,05_highincome.R,
-cor_pulsefood_pulseshare_spearman,0.47,Spearman rho,05_highincome.R,
-hi_n_countries,48,countries,05_highincome.R,"high income, pop 1M+"
-us_animal_share_protein,67.94,% of protein,05_highincome.R,2021-2023 average
-us_rank_animal_share_protein,5,rank of 48,05_highincome.R,1 = highest
-us_total_protein_g,122.66,g/person/day,05_highincome.R,2021-2023 average
-us_rank_total_protein,8,rank of 48,05_highincome.R,
-us_pulse_share_protein,1.94,% of protein,05_highincome.R,2021-2023 average
-us_rank_pulse_share,24,rank of 48,05_highincome.R,
-us_pulse_pct_food,76.5,% of food+feed pulses,05_highincome.R,2021-2023 average
-us_rank_pulse_food,10,rank of 48,05_highincome.R,
-us_produce_kg,299.69,kg/person/yr,05_highincome.R,fruit + vegetables
-us_rank_produce,5,rank of 48,05_highincome.R,
-hi_median_pulse_share_protein,1.9,% of protein,05_highincome.R,
-hi_max_pulse_share_protein,9.88,% of protein,05_highincome.R,Norway
-ita_total_protein_g,116.23,g/person/day,05_highincome.R,Italy
-ita_animal_share_protein,59.6,% of protein,05_highincome.R,Italy
-esp_total_protein_g,114.95,g/person/day,05_highincome.R,Spain
-esp_animal_share_protein,67.01,% of protein,05_highincome.R,Spain
-isr_total_protein_g,135.72,g/person/day,05_highincome.R,Israel
-isr_animal_share_protein,59.44,% of protein,05_highincome.R,Israel
-cor_totalprotein_animalshare_r,0.52,Pearson r,05_highincome.R,
 cor_totalprotein_animalshare_p,1.73e-4,p-value,05_highincome.R,
 cor_pulsefood_pulseshare_r,0.38,Pearson r,05_highincome.R,
 cor_pulsefood_pulseshare_p,0.00696,p-value,05_highincome.R,
 cor_pulsefood_pulseshare_spearman,0.47,Spearman rho,05_highincome.R,
+world_n_countries_mapped,182,countries,06_world_map.R,
+world_median_animal_share,49.86,% of protein,06_world_map.R,2021-2023 average
+us_rank_animal_share_all_countries,9,rank of 182,06_world_map.R,1 = highest; all countries with FAO data
+median_animal_share_low_income,20.18,% of protein,06_world_map.R,n = 19
+median_animal_share_lower_middle_income,31.88,% of protein,06_world_map.R,n = 46
+median_animal_share_upper_middle_income,49.42,% of protein,06_world_map.R,n = 56
+median_animal_share_high_income,60.58,% of protein,06_world_map.R,n = 61
+cor_loggdp_animalshare_r,0.78,Pearson r,06_world_map.R,"n = 177, log10 GDP per capita PPP"
+cor_loggdp_animalshare_p,1.24e-37,p-value,06_world_map.R,

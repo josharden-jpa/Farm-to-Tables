@@ -73,6 +73,14 @@ Josh set the research direction, chose and downloaded all data, ran all code on 
 - U.S. ranks of 48: animal share of protein 5th (68%); total protein 8th; pulse share of protein 24th (1.9%, at the median); pulses to food 10th (77%); fruit + vegetables by weight 5th.
 - Comparison pairs: Italy 116 g protein, 60% animal vs Spain 115 g, 67% animal; Israel 136 g, 59% animal vs U.S. 123 g, 68% animal.
 
+## 7b. World map and income (scripts/06_world_map.R)
+
+- Map variable: animal share of protein, every country with FAO data (182 mapped; every FAO country matched a map shape). Equal Earth projection so country areas are not distorted. Taiwan mapped (FAO has it) though absent from World Bank lists.
+- Natural Earth codes France, Norway and a few others as "-99"; filled from its adm0_a3 field so they are not dropped.
+- Income test (n = 177 with GDP data): animal share of protein vs log10 GDP per capita (PPP), Pearson r = 0.78, p < 0.001. Median animal share by World Bank group: low 20%, lower-middle 32%, upper-middle 49%, high 61%.
+- This is the empirical justification for restricting the main comparison to high-income countries (suggested by Claude; Josh agreed): income alone explains much of the global pattern, so comparing the U.S. with poorer countries would confound choice with poverty.
+- U.S. rank: 9th of 182 worldwide; 5th of 48 among high-income peers.
+
 ## 8. Predictions vs results (feeds the Hypothesis section)
 
 | Josh's prediction | Result |
@@ -87,5 +95,5 @@ Josh set the research direction, chose and downloaded all data, ran all code on 
 
 - Verify every headline number against output/key_numbers.csv.
 - Sources for: corn as largest U.S. crop; distillers grains; 2012 drought (if mentioned); beef peak causes (only if cited).
-- Build world map; finalize figure set.
+- Finalize figure set (select keepers for report and slides).
 - Decide fig_07 title: verify "America's largest crop" (NASS; state whether by tonnage or acreage) or retitle to "...into U.S. corn use".

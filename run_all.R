@@ -24,5 +24,9 @@ for (s in scripts) {
 }
 
 message("\nAll done. Key numbers:")
-if (file.exists("output/key_numbers.csv")) print(readr::read_csv("output/key_numbers.csv",
-                                                                  show_col_types = FALSE), n = Inf)
+if (file.exists("output/key_numbers.csv")) {
+  kn <- readr::read_csv("output/key_numbers.csv", show_col_types = FALSE)
+  # Format each number on its own, so tiny p-values don't force scientific notation on everything
+  kn$value <- vapply(kn$value, function(v) format(v, digits = 3, big.mark = ","), character(1))
+  print(as.data.frame(kn[, c("name", "value", "unit")]), right = FALSE)
+}

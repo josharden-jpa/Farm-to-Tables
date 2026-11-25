@@ -50,3 +50,12 @@ Answer each in your own words, then check the answer against the data, the resea
 32. Countries with no FAO pulse-feed data are counted as feeding zero pulses. How do you know?
 33. Norway is an outlier. Why not just remove it?
 34. "Similar circumstances, different choices": isn't culture or geography (e.g. Ireland's grassland) a circumstance, not a choice?
+
+## Step 06: World map and income (scripts/06_world_map.R)
+
+35. Why map animal share of protein and not something else?
+36. Doesn't the map make poor countries look "better" for eating fewer animal products?
+37. Why put income on a log scale?
+38. Richer countries eat more animal protein. Isn't the U.S. just doing what rich countries do?
+39. Why that color scale? Why grey for missing countries?
+40. Why an Equal Earth projection instead of the usual world map?
