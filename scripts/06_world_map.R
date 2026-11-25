@@ -102,14 +102,13 @@ fmt_p <- function(p) ifelse(p < 0.001, "p < 0.001", paste0("p = ", signif(p, 2))
 # ---- fig_13: world map ----
 fig13 <- ggplot(world_map) +
   geom_sf(aes(fill = animal_share), color = "white", linewidth = 0.1) +
-  geom_sf(data = filter(world_map, iso3 == "USA"), fill = NA, color = col_us, linewidth = 0.4) +
   scale_fill_distiller(palette = "YlOrBr", direction = 1, na.value = "grey85",
                        limits = c(0, 75), breaks = seq(0, 75, 15),
                        labels = function(x) paste0(x, "%"),
                        name = "Share of protein\nfrom animal products") +
   coord_sf(crs = "+proj=eqearth", datum = NA) +
   labs(title = "Where protein comes from: animal products' share of the food supply",
-       subtitle = paste0(yrs, ". United States outlined in red. Grey = no FAO data."),
+       subtitle = paste0(yrs, ". Grey = no FAO data."),
        caption = wrap_caption(paste(
          "Source: FAOSTAT Food Balances (new methodology); map: Natural Earth.",
          "Supply, not intake. Low shares in poorer countries often reflect income, not choice;",

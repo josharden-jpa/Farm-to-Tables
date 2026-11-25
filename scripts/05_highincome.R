@@ -169,6 +169,38 @@ fig9 <- ggplot(hi, aes(total_protein_g, animal_share_protein)) +
   theme_dwv()
 save_fig(fig9, "fig_09_protein_total_vs_animal_share", width = 9, height = 6)
 
+# ---- fig_09b: presentation version, two pairs highlighted ----
+pairs <- hi |>
+  filter(iso3 %in% c("ITA", "ESP", "ISR", "USA")) |>
+  mutate(pair = if_else(iso3 %in% c("ITA", "ESP"), "Italy vs Spain", "Israel vs U.S."),
+         tag  = paste0(label, "\n", round(total_protein_g), " g, ",
+                       round(animal_share_protein), "% animal"))
+pair_colors <- c("Italy vs Spain" = col_plant, "Israel vs U.S." = col_animal)
+
+fig9b <- ggplot(hi, aes(total_protein_g, animal_share_protein)) +
+  geom_point(color = "grey80", size = 2.4) +
+  geom_line(data = filter(pairs, pair == "Italy vs Spain"), color = col_plant,
+            linewidth = 0.8, linetype = "dotted") +
+  geom_line(data = filter(pairs, pair == "Israel vs U.S."), color = col_animal,
+            linewidth = 0.8, linetype = "dotted") +
+  geom_point(data = pairs, aes(color = pair), size = 3.8) +
+  geom_text_repel(data = pairs, aes(label = tag, color = pair), size = 3.8,
+                  fontface = "bold", lineheight = 0.9, seed = 2,
+                  box.padding = 0.8, min.segment.length = 0) +
+  scale_color_manual(values = pair_colors, guide = "none") +
+  scale_y_continuous(labels = function(x) paste0(x, "%")) +
+  labs(title = "Same amount of protein, a different mix",
+       subtitle = wrap_caption(paste(
+         "Italy and Spain: nearly equal protein. Israel: more protein than the U.S., less of it",
+         "from animals. Grey: other high-income countries."), width = 95),
+       x = "Total protein supply (grams per person per day)",
+       y = "Share of protein from animal products",
+       caption = wrap_caption(paste("Source: FAOSTAT Food Balances, ", yrs,
+                                    ". High-income countries, population 1M+. Supply, not intake.",
+                                    sep = ""))) +
+  theme_dwv()
+save_fig(fig9b, "fig_09b_protein_pairs_presentation", width = 9, height = 6)
+
 # ---- fig_10: grams of plant vs animal protein, sorted by total ----
 fig10 <- hi |>
   select(label, is_us, total_protein_g, `Plant protein` = plant_protein_g,

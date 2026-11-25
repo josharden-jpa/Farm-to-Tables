@@ -38,8 +38,13 @@ wrap_caption <- function(text, width = 120) stringr::str_wrap(text, width)
 # ---- Save a figure: output/figures/<name>.png ----
 save_fig <- function(plot, name, width = 8, height = 5) {
   path <- file.path("output/figures", paste0(name, ".png"))
+  before <- if (file.exists(path)) file.mtime(path) else as.POSIXct(0)
   ggsave(path, plot, width = width, height = height, dpi = 300, bg = "white")
-  message("Saved figure: ", path)
+  if (!file.exists(path) || file.mtime(path) <= before) {
+    warning("NOT saved (file may be open in another program): ", path, call. = FALSE)
+  } else {
+    message("Saved figure: ", path)
+  }
   invisible(path)
 }
 
