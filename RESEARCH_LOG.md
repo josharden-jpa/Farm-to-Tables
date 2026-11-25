@@ -45,6 +45,9 @@ Josh set the research direction, chose and downloaded all data, ran all code on 
 - Plant food groups sum to FAO's plant total (gap at most 2 kcal).
 - "Other animal" (animal products minus meat, milk, eggs, fish) is almost entirely animal fats (199 of 205 kcal in 1961; 140 of 141 in 2024). Relabeled accordingly.
 - **FAO vs ERS meat:** correlation 0.91 over 1961-2021. FAO shows a +9.5% jump in 2018 (442 to 484 kcal); ERS shows +1.1%. Treated as a likely FAO data artifact; not interpreted. This also affects the apparent rise in FAO's animal share after 2017.
+- FAO's new series also shows animal fats jumping after 2020 (about 87 to 140 kcal/person/day). Like the 2018 meat jump, it appears in one series only and has not been cross-checked; it slightly inflates the 2024 animal share (28%). Noted in figure captions; not interpreted. [VERIFY if a source can check it]
+- Figure titles revised so none asserts a trend we flag as a possible artifact (fig_02 title changed from "fell, then edged up").
+- Missing groups set to zero only where verified: the U.S. has no "Sugar Crops" rows (raw cane/beet eaten directly; refined sugar is under Sugar & Sweeteners). The plant-groups-sum-to-total check confirms nothing is lost.
 - ERS warns of a reporting-driven spike in vegetable oils around 2000; the FAO oil series shows a step then. Part of the 180% oil increase may be an artifact. [VERIFY wording]
 
 ## 6. Corn

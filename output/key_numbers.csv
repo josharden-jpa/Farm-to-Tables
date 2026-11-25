@@ -1,0 +1,30 @@
+name,value,unit,source_script,note
+us_total_kcal_method_gap_avg,2,% (new vs old),01_build_fao.R,2010-2013 average
+us_animal_share_max_method_gap,0.03,percentage points,01_build_fao.R,largest gap 2010-2013
+countries_median_method_gap,0.36,%,01_build_fao.R,"total kcal, 2010-2013"
+countries_share_within_5pct,76.02,% of countries,01_build_fao.R,"total kcal, 2010-2013"
+countries_in_overlap,171,countries,01_build_fao.R,
+us_total_kcal_first,2879.8,kcal/person/day,02_us_trends.R,1961
+us_total_kcal_last,3949.73,kcal/person/day,02_us_trends.R,2024
+us_total_kcal_pct_change,37.15,%,02_us_trends.R,1961 to 2024
+us_animal_share_first,35.07,% of kcal,02_us_trends.R,1961
+us_animal_share_last,28.45,% of kcal,02_us_trends.R,2024 (post-2017 rise partly an FAO artifact; see 03)
+us_meat_pct_change,48.9,%,02_us_trends.R,
+us_animal_fats_pct_change,-29.76,%,02_us_trends.R,
+us_plant_kcal_change,956.24,kcal/person/day,02_us_trends.R,
+us_oils_kcal_change,496.77,kcal/person/day,02_us_trends.R,part of rise near 2000 may be a reporting artifact (ERS)
+us_oils_grains_sugar_share_of_plant_growth,81.46,% of added plant kcal,02_us_trends.R,
+us_pulses_kcal_last,36.57,kcal/person/day,02_us_trends.R,2024
+us_pulses_share_of_kcal_last,0.93,% of kcal,02_us_trends.R,2024
+us_total_kcal_first,2879.8,kcal/person/day,02_us_trends.R,1961
+us_total_kcal_last,3949.73,kcal/person/day,02_us_trends.R,2024
+us_total_kcal_pct_change,37.15,%,02_us_trends.R,1961 to 2024
+us_animal_share_first,35.07,% of kcal,02_us_trends.R,1961
+us_animal_share_last,28.45,% of kcal,02_us_trends.R,2024 (post-2017 rise partly an FAO artifact; see 03)
+us_meat_pct_change,48.9,%,02_us_trends.R,
+us_animal_fats_pct_change,-29.76,%,02_us_trends.R,
+us_plant_kcal_change,956.24,kcal/person/day,02_us_trends.R,
+us_oils_kcal_change,496.77,kcal/person/day,02_us_trends.R,part of rise near 2000 may be a reporting artifact (ERS)
+us_oils_grains_sugar_share_of_plant_growth,81.46,% of added plant kcal,02_us_trends.R,
+us_pulses_kcal_last,36.57,kcal/person/day,02_us_trends.R,2024
+us_pulses_share_of_kcal_last,0.93,% of kcal,02_us_trends.R,2024

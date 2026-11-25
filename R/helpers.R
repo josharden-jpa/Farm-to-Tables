@@ -32,6 +32,9 @@ theme_dwv <- function(base_size = 12) {
     )
 }
 
+# ---- Wrap long captions so they never run off the edge ----
+wrap_caption <- function(text, width = 120) stringr::str_wrap(text, width)
+
 # ---- Save a figure: output/figures/<name>.png ----
 save_fig <- function(plot, name, width = 8, height = 5) {
   path <- file.path("output/figures", paste0(name, ".png"))

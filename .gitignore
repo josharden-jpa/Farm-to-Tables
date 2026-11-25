@@ -11,3 +11,5 @@ data/raw/*
 
 # Never commit secrets (NASS key lives here)
 .Renviron
+
+data/processed/
