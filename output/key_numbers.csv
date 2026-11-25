@@ -28,3 +28,31 @@ us_oils_kcal_change,496.77,kcal/person/day,02_us_trends.R,part of rise near 2000
 us_oils_grains_sugar_share_of_plant_growth,81.46,% of added plant kcal,02_us_trends.R,
 us_pulses_kcal_last,36.57,kcal/person/day,02_us_trends.R,2024
 us_pulses_share_of_kcal_last,0.93,% of kcal,02_us_trends.R,2024
+ers_beef_peak_lbs,88.78,lbs/person/yr (boneless),03_meat_ers.R,peak year 1976
+ers_beef_last_lbs,56.18,lbs/person/yr (boneless),03_meat_ers.R,2021
+ers_chicken_first_lbs,10.43,lbs/person/yr (boneless),03_meat_ers.R,1909
+ers_chicken_last_lbs,68.1,lbs/person/yr (boneless),03_meat_ers.R,2021
+ers_year_chicken_passes_beef,2010,year,03_meat_ers.R,first year after which chicken stays above beef
+meat_fao_ers_correlation,0.91,r,03_meat_ers.R,1961 to 2021 (descriptive; no p-value because years are not independent)
+fao_meat_change_2018,9.53,% vs 2017,03_meat_ers.R,likely FAO data artifact
+ers_meat_change_2018,1.09,% vs 2017,03_meat_ers.R,
+ers_meat_index_last,130.77,index (1961 = 100),03_meat_ers.R,2021
+ers_beef_peak_lbs,88.78,lbs/person/yr (boneless),03_meat_ers.R,peak year 1976
+ers_beef_last_lbs,56.18,lbs/person/yr (boneless),03_meat_ers.R,2021
+ers_chicken_first_lbs,10.43,lbs/person/yr (boneless),03_meat_ers.R,1909
+ers_chicken_last_lbs,68.1,lbs/person/yr (boneless),03_meat_ers.R,2021
+ers_year_chicken_passes_beef,2010,year,03_meat_ers.R,first year after which chicken stays above beef
+meat_fao_ers_correlation,0.91,r,03_meat_ers.R,1961 to 2021 (descriptive; no p-value because years are not independent)
+fao_meat_change_2018,9.53,% vs 2017,03_meat_ers.R,likely FAO data artifact
+ers_meat_change_2018,1.09,% vs 2017,03_meat_ers.R,
+ers_meat_index_last,130.77,index (1961 = 100),03_meat_ers.R,2021
+corn_feed_share,39.02,% of corn use,04_corn_ers.R,2021-2023 marketing-year average
+corn_ethanol_share,36.71,% of corn use,04_corn_ers.R,2021-2023 marketing-year average
+corn_export_share,14.6,% of corn use,04_corn_ers.R,2021-2023 marketing-year average
+corn_feed_ethanol_export_share,90.32,% of corn use,04_corn_ers.R,2021-2023 marketing-year average
+corn_sweeteners_cereals_drinks_share,7.89,% of corn use,04_corn_ers.R,2021-2023 marketing-year average
+corn_ethanol_share_1980,0.48,% of corn use,04_corn_ers.R,
+corn_ethanol_share_2010,38.51,% of corn use,04_corn_ers.R,
+corn_feed_share_1980,58.11,% of corn use,04_corn_ers.R,
+corn_total_use_pct_change,107.7,%,04_corn_ers.R,"1980 to 2024, total corn use"
+corn_feed_volume_pct_change,28.42,%,04_corn_ers.R,"1980 to 2024, feed and residual use"
