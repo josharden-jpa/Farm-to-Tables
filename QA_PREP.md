@@ -37,3 +37,16 @@ Answer each in your own words, then check the answer against the data, the resea
 22. You switched from FAO to USDA for this figure. Isn't that cherry-picking the source?
 23. Feed's share dropped from about 58% to about 37%. Does that mean animals eat less corn?
 24. Why a stacked area chart? What does it hide?
+
+## Step 05: Wealthy-country comparison (scripts/05_highincome.R)
+
+25. Why only high-income countries? Aren't you hiding the countries that eat the most plants?
+26. Why countries with at least 1 million people? Doesn't that cutoff change the results?
+27. Why protein here, when the U.S. section used calories?
+28. Why average 2021-2023 instead of the latest year?
+29. What does r = 0.52 actually mean? Is that strong? What does the p-value tell us, and what doesn't it tell us?
+30. Why report both Pearson and Spearman correlations?
+31. Does the correlation mean that more protein *causes* a higher animal share?
+32. Countries with no FAO pulse-feed data are counted as feeding zero pulses. How do you know?
+33. Norway is an outlier. Why not just remove it?
+34. "Similar circumstances, different choices": isn't culture or geography (e.g. Ireland's grassland) a circumstance, not a choice?

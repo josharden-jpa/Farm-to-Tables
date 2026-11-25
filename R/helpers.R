@@ -56,7 +56,9 @@ save_table <- function(df, name) {
 # so it can be traced back to the script that produced it.
 record_number <- function(name, value, unit = "", source_script = "", note = "") {
   path <- "output/key_numbers.csv"
-  row <- tibble(name = name, value = round(value, 2), unit = unit,
+  # Keep small values (e.g. p-values) readable instead of rounding them to 0
+  value <- ifelse(abs(value) < 0.01 & value != 0, signif(value, 3), round(value, 2))
+  row <- tibble(name = name, value = value, unit = unit,
                 source_script = source_script, note = note)
   write_csv(row, path, append = file.exists(path))
   invisible(value)

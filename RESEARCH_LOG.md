@@ -66,7 +66,12 @@ Josh set the research direction, chose and downloaded all data, ran all code on 
 - Assumption: a missing FAO pulse feed row means zero feed. [VERIFY for a few countries]
 - **Fix:** pulse food share redefined as food / (food + feed). The first version used domestic supply as the denominator and produced impossible values (Denmark 173% feed) because supply includes stock changes.
 - Norway shows the highest pulse protein share but only ~23% of pulses to food; unexplained, so not featured. [VERIFY]
-- Correlations (descriptive, n = 48): pulse food share vs pulse protein share r = 0.38; total protein vs animal protein share r = 0.52. Significance tests to be added.
+- Significance tests (n = 48 countries; countries are separate observations, so p-values apply, unlike the U.S. time series):
+  - Total protein vs animal share of protein: Pearson r = 0.52 (95% CI 0.27 to 0.70), p = 0.0002; Spearman rho = 0.58.
+  - Pulses used as food vs pulse share of protein: Pearson r = 0.38 (95% CI 0.11 to 0.60), p = 0.007; Spearman rho = 0.47.
+  - Spearman (rank-based, outlier-resistant) is slightly stronger in both, so outliers (Norway, UAE) do not drive the results. Associations only; no causal claim.
+- U.S. ranks of 48: animal share of protein 5th (68%); total protein 8th; pulse share of protein 24th (1.9%, at the median); pulses to food 10th (77%); fruit + vegetables by weight 5th.
+- Comparison pairs: Italy 116 g protein, 60% animal vs Spain 115 g, 67% animal; Israel 136 g, 59% animal vs U.S. 123 g, 68% animal.
 
 ## 8. Predictions vs results (feeds the Hypothesis section)
 
@@ -82,4 +87,5 @@ Josh set the research direction, chose and downloaded all data, ran all code on 
 
 - Verify every headline number against output/key_numbers.csv.
 - Sources for: corn as largest U.S. crop; distillers grains; 2012 drought (if mentioned); beef peak causes (only if cited).
-- Add cor.test results; build world map; build final figure set.
+- Build world map; finalize figure set.
+- Decide fig_07 title: verify "America's largest crop" (NASS; state whether by tonnage or acreage) or retitle to "...into U.S. corn use".

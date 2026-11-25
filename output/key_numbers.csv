@@ -56,3 +56,51 @@ corn_ethanol_share_2010,38.51,% of corn use,04_corn_ers.R,
 corn_feed_share_1980,58.11,% of corn use,04_corn_ers.R,
 corn_total_use_pct_change,107.7,%,04_corn_ers.R,"1980 to 2024, total corn use"
 corn_feed_volume_pct_change,28.42,%,04_corn_ers.R,"1980 to 2024, feed and residual use"
+hi_n_countries,48,countries,05_highincome.R,"high income, pop 1M+"
+us_animal_share_protein,67.94,% of protein,05_highincome.R,2021-2023 average
+us_rank_animal_share_protein,5,rank of 48,05_highincome.R,1 = highest
+us_total_protein_g,122.66,g/person/day,05_highincome.R,2021-2023 average
+us_rank_total_protein,8,rank of 48,05_highincome.R,
+us_pulse_share_protein,1.94,% of protein,05_highincome.R,2021-2023 average
+us_rank_pulse_share,24,rank of 48,05_highincome.R,
+us_pulse_pct_food,76.5,% of food+feed pulses,05_highincome.R,2021-2023 average
+us_rank_pulse_food,10,rank of 48,05_highincome.R,
+us_produce_kg,299.69,kg/person/yr,05_highincome.R,fruit + vegetables
+us_rank_produce,5,rank of 48,05_highincome.R,
+hi_median_pulse_share_protein,1.9,% of protein,05_highincome.R,
+hi_max_pulse_share_protein,9.88,% of protein,05_highincome.R,Norway
+ita_total_protein_g,116.23,g/person/day,05_highincome.R,Italy
+ita_animal_share_protein,59.6,% of protein,05_highincome.R,Italy
+esp_total_protein_g,114.95,g/person/day,05_highincome.R,Spain
+esp_animal_share_protein,67.01,% of protein,05_highincome.R,Spain
+isr_total_protein_g,135.72,g/person/day,05_highincome.R,Israel
+isr_animal_share_protein,59.44,% of protein,05_highincome.R,Israel
+cor_totalprotein_animalshare_r,0.52,Pearson r,05_highincome.R,
+cor_totalprotein_animalshare_p,0,p-value,05_highincome.R,
+cor_pulsefood_pulseshare_r,0.38,Pearson r,05_highincome.R,
+cor_pulsefood_pulseshare_p,0.01,p-value,05_highincome.R,
+cor_pulsefood_pulseshare_spearman,0.47,Spearman rho,05_highincome.R,
+hi_n_countries,48,countries,05_highincome.R,"high income, pop 1M+"
+us_animal_share_protein,67.94,% of protein,05_highincome.R,2021-2023 average
+us_rank_animal_share_protein,5,rank of 48,05_highincome.R,1 = highest
+us_total_protein_g,122.66,g/person/day,05_highincome.R,2021-2023 average
+us_rank_total_protein,8,rank of 48,05_highincome.R,
+us_pulse_share_protein,1.94,% of protein,05_highincome.R,2021-2023 average
+us_rank_pulse_share,24,rank of 48,05_highincome.R,
+us_pulse_pct_food,76.5,% of food+feed pulses,05_highincome.R,2021-2023 average
+us_rank_pulse_food,10,rank of 48,05_highincome.R,
+us_produce_kg,299.69,kg/person/yr,05_highincome.R,fruit + vegetables
+us_rank_produce,5,rank of 48,05_highincome.R,
+hi_median_pulse_share_protein,1.9,% of protein,05_highincome.R,
+hi_max_pulse_share_protein,9.88,% of protein,05_highincome.R,Norway
+ita_total_protein_g,116.23,g/person/day,05_highincome.R,Italy
+ita_animal_share_protein,59.6,% of protein,05_highincome.R,Italy
+esp_total_protein_g,114.95,g/person/day,05_highincome.R,Spain
+esp_animal_share_protein,67.01,% of protein,05_highincome.R,Spain
+isr_total_protein_g,135.72,g/person/day,05_highincome.R,Israel
+isr_animal_share_protein,59.44,% of protein,05_highincome.R,Israel
+cor_totalprotein_animalshare_r,0.52,Pearson r,05_highincome.R,
+cor_totalprotein_animalshare_p,1.73e-4,p-value,05_highincome.R,
+cor_pulsefood_pulseshare_r,0.38,Pearson r,05_highincome.R,
+cor_pulsefood_pulseshare_p,0.00696,p-value,05_highincome.R,
+cor_pulsefood_pulseshare_spearman,0.47,Spearman rho,05_highincome.R,
